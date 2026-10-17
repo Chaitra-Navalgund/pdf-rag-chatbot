@@ -1,0 +1,42 @@
+# Git — ignore sensitive files, build artefacts, and large generated data
+.env
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Virtual environments
+venv/
+env/
+.venv/
+ENV/
+
+# Uploads (user data — do not commit)
+uploads/*.pdf
+
+# Vector store data
+*.index
+*.faiss
+
+# Database
+*.db
+*.sqlite
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Pytest
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Logs
+*.log
