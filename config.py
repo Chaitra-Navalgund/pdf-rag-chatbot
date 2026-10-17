@@ -30,7 +30,7 @@ class Config:
 
     # ── LLM Provider ──────────────────────────────────────
     LLM_PROVIDER: str = os.getenv("LLM_PROVIDER", "gemini").lower()
-    LLM_MODEL: str = os.getenv("LLM_MODEL", "gemini-1.5-flash")
+    LLM_MODEL: str = os.getenv("LLM_MODEL", "gemini-3.8-flash")
     GEMINI_API_KEY: str | None = os.getenv("GEMINI_API_KEY")
     OPENAI_API_KEY: str | None = os.getenv("OPENAI_API_KEY")
 
